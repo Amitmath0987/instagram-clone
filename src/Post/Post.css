@@ -1,0 +1,133 @@
+/* .post__parent {
+  padding: 0;
+} */
+.post {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 45px;
+  background-color: white;
+  border: 1px solid lightgray;
+  overflow-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-radius: 20px 20px; */
+
+  /* margin: 45px auto; */
+}
+.post__header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.post__image {
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.post__caption {
+  font-weight: normal;
+  padding: 20px;
+}
+.post__commentBox {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post__input {
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-top: 1px solid lightgray;
+  flex: 1;
+}
+.post__button {
+  flex: 0;
+  border: none;
+  outline: none;
+  border-top: 1px solid lightgray;
+  color: #6082a3;
+}
+.post__comments {
+  padding: 20px;
+}
+@media (max-width: 266px) {
+  .post {
+    width: auto;
+    margin-top: 0;
+  }
+  .post__input {
+    width: 80%;
+  }
+}
+@media (min-width: 600px) {
+  .post {
+    width: 400px;
+    /* margin-top: 0; */
+  }
+  .post__parent {
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .post {
+    width: 500px;
+  }
+  .post__parent {
+    padding: 20px;
+  }
+}
+
+/* posts related styles */
+
+.app__header {
+  position: sticky;
+  top: 0;
+  padding: 12px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.app__headerImage {
+  object-fit: contain;
+  z-index: 0;
+}
+.app__loginContainer {
+  padding: 10px;
+  border: 1px solid rgb(226, 222, 222);
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+@media (max-width: 348px) {
+  .app__headerImage {
+    width: 77px;
+  }
+  .app__loginContainer {
+    margin: auto;
+  }
+}
+
+.login__message {
+  position: sticky;
+  bottom: 10px;
+  width: 90%;
+  background-color: rgba(253, 251, 251, 000000.7);
+  color: #ff98a1;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 5px 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 2;
+}

@@ -1,0 +1,24 @@
+.img__uploader {
+  position: sticky;
+  bottom: 10px;
+  width: 90%;
+  background-color: rgba(253, 251, 251, 000000.7);
+  border: 1px solid lightgray;
+  border-radius: 5px 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+.img__uploader input,
+progress {
+  /* width: 100%; */
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  outline: none;
+}
